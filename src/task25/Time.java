@@ -31,5 +31,6 @@ public class Time {
 
     public static void printInfo(Time time) {
         System.out.println("V obekte polnoe kolichestvo sekund " + time.allSeconds());
+
     }
 }
