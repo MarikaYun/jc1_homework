@@ -1,3 +1,5 @@
+package task25;
+
 public class Time {
     private int hour;
     private int minute;
@@ -10,7 +12,6 @@ public class Time {
     }
 
     public Time(int second) {
-
         this.second = second;
     }
 
@@ -20,7 +21,7 @@ public class Time {
         return hourToSecond + minuteToSecond + second;
     }
 
-    public static int compare(Time time1, Time time2) {
+    public int compare(Time time1, Time time2) {
         if (time1.allSeconds() > time2.allSeconds()) {
             return 1;
         } else if (time1 == time2) {
@@ -30,18 +31,5 @@ public class Time {
 
     public static void printInfo(Time time) {
         System.out.println("V obekte polnoe kolichestvo sekund " + time.allSeconds());
-    }
-
-
-    public static void main(String[] args) {
-        Time time = new Time(456);
-        Time time1 = new Time(525);
-        Time time2 = new Time(5, 23, 45);
-        Time time3 = new Time(1, 2, 45);
-        System.out.println(time2.allSeconds());
-        System.out.println(time3.allSeconds());
-        System.out.println(compare(time1, time));
-        printInfo(time);
-        printInfo(time1);
     }
 }
