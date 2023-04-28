@@ -1,8 +1,8 @@
-package homework4.task39;
+package homework4.ttask39;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle{
 
-    protected Car(String name) {
+    public Car(String name) {
         super(name);
     }
 

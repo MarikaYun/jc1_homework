@@ -1,5 +1,4 @@
-package homework4.task39;
-
+package homework4.ttask39;
 
 public class Garage<T extends Vehicle> {
     private T vehicle;
@@ -19,4 +18,3 @@ public class Garage<T extends Vehicle> {
         System.out.println("В гараже хранится мотоцикл: " + getVehicle());
     }
 }
-
