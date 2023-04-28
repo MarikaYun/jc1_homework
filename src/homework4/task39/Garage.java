@@ -1,22 +1,22 @@
 package homework4.task39;
 
 
-public class Garage<Vehicle> {
-    private Car car;
-    private Motorcycle motorcycle;
+public class Garage<T extends Vehicle> {
+    private T vehicle;
 
-    public  void setCar(Car car) {
-        this.car = car;
+    public  void setVehicle(T vehicle) {
+        this.vehicle = vehicle;
+    }
+    public T getVehicle(){
+        return vehicle;
     }
 
-    public void setMotorcycle(Motorcycle motorcycle) {
-        this.motorcycle = motorcycle;
-    }
+
     public void infoCar() {
-        System.out.println("В гараже хранится автомобиль: " + car);
+        System.out.println("В гараже хранится автомобиль: " +getVehicle());
     }
     public void infoMoto() {
-        System.out.println("В гараже хранится мотоцикл: " + motorcycle);
+        System.out.println("В гараже хранится мотоцикл: " + getVehicle());
     }
 }
 

@@ -9,14 +9,14 @@ public class Main {
 
         Garage<Car> garageCar = new Garage<>();
         System.out.println("Введите марку автомобиля ");
-        garageCar.setCar(new Car(scanner.nextLine()));
+        garageCar.setVehicle(new Car(scanner.nextLine()));
 
         garageCar.infoCar();
 
 
         Garage<Motorcycle> garageMoto  = new Garage<>();
         System.out.println("Введите марку мотоцикла");
-        garageMoto.setMotorcycle(new Motorcycle(scanner.nextLine()));
+        garageMoto.setVehicle(new Motorcycle(scanner.nextLine()));
 
         garageMoto.infoMoto();
     }
