@@ -45,10 +45,10 @@ public enum Season {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         switch (s) {
-            case "spring" -> System.out.println("Spring continues " + Season.SPRING.getCountOfDays() + " days");
-            case "summer" -> System.out.println("Summer continues " + Season.SUMMER.getCountOfDays() + " days");
-            case "autumn" -> System.out.println("Autumn continues " + Season.AUTUMN.getCountOfDays() + " day");
-            case "winter" -> System.out.println("Winter contunues " + Season.WINTER.getCountOfDays() + " days");
+          //  case "spring" -> System.out.println("Spring continues " + Season.SPRING.getCountOfDays() + " days");
+            //case "summer" -> System.out.println("Summer continues " + Season.SUMMER.getCountOfDays() + " days");
+          //  case "autumn" -> System.out.println("Autumn continues " + Season.AUTUMN.getCountOfDays() + " day");
+            //case "winter" -> System.out.println("Winter contunues " + Season.WINTER.getCountOfDays() + " days");
         }
     }
 }

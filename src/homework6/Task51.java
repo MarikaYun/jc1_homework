@@ -34,8 +34,8 @@ public class Task51 {
             System.out.println("Files moved");
         }
 
+        Path listFile = Files.createFile(Path.of("C:\\test\\folder1\\folder2\\folder3\\list.txt"));
         try (DirectoryStream<Path> files = Files.newDirectoryStream(directory)) {
-            Path listFile = Files.createFile(Path.of("C:\\test\\folder1\\folder2\\folder3\\list.txt"));
             for (Path file : files) {
                 Files.write(listFile, file.getFileName().toString().getBytes(), StandardOpenOption.APPEND);
                 //не придумала как добавить пробелы
