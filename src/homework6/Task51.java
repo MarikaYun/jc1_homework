@@ -37,8 +37,8 @@ public class Task51 {
         Path listFile = Files.createFile(Path.of("C:\\test\\folder1\\folder2\\folder3\\list.txt"));
         try (DirectoryStream<Path> files = Files.newDirectoryStream(directory)) {
             for (Path file : files) {
-                Files.write(listFile, file.getFileName().toString().getBytes(), StandardOpenOption.APPEND);
-                //не придумала как добавить пробелы
+                String spaceFile = file.getFileName().toString() + "\n";
+                Files.write(listFile, spaceFile.getBytes(), StandardOpenOption.APPEND);
             }
             System.out.println("Files written");
         }
